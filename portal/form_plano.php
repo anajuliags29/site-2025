@@ -34,6 +34,14 @@
 
             <hr>
 
+            <?php
+               if (isset ($_SESSION['msgFormPlano'])) {
+                echo $_SESSION['msgFormPlano'];
+                unset($_SESSION['msgFormPlano']);
+
+               }
+            ?>
+
             <form>
                 <div class="form-row">
                     <div class="col">
