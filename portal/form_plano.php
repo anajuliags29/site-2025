@@ -41,12 +41,12 @@
 
                }
             ?>
-
-            <form>
+       
+            <form action= "cad_plano.php" method="POST">
                 <div class="form-row">
                     <div class="col">
                         <label for="nomePlano">* Nome</label>
-                        <input type="text" class="form-control" id= "nome_plano" name="name_plano" placeholder="Nome do plano">
+                        <input type="text" class="form-control" id= "nome_plano" name="nome_plano" placeholder="Nome do plano">
                     </div>
                     <div class="col">
                         <label for="descricaoPlano">* Descrição</label>
