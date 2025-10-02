@@ -77,7 +77,7 @@
         </table>
 
         <?php } else {
-            echo "<p> nehum plano cadastrado! </p>";
+            echo "<p> nenhum plano cadastrado! </p>";
         }
         ?>
                 <br>

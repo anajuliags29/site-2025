@@ -43,11 +43,11 @@
                 <?php endif; ?>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="lista_faturas.php" id="header">
-                        <i class="fa fa-credit-card-alt"></i> Faturas
+                    <a class="nav-link" href="lista_faturas.php" id="header"><i class="fa fa-credit-card-alt"></i> Faturas
+                </li>
 
                     <?php
-                    if ($_SESSION['nivel'] != '3'): ?>
+                    if ($_SESSION['nivel'] != '3'){ ?>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="header">
                             <i class="fa fa-plus"></i> LISTAR
@@ -60,15 +60,15 @@
                             <li><a class="dropdown-item" href="form_atendimento.php" id="header2"><i class="fa fa-calendar"></i> &ensp; Atendimento</a></li>
                         </ul>
                     </li>
-                <?php endif; ?> 
-                    </a>
-                </li>
+                <?php } ?> 
+                    
+                    </ul>
             </ul>
+            </div>
             <a href="logout.php">
                 <button class="btn btn-outline-light rounded-100">
                     <strong><i class="fa fa-reply"></i> Sair</strong>
                 </button>
             </a>
-        </div>
     </div>
 </nav>
