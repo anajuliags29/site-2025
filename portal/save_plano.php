@@ -11,7 +11,7 @@ if (!in_array($nivel, $niveldapagina)) {
             history.go(-1);
         </script>
     ";
-} else if (!empty($_POST['nome_plano']) || !empty($_POST['desc_plano']) || !empty($_POST['vlr_plano'])) {
+} else if (!empty($_POST['id_plano'])) {
 
 
     $nome_plano = $_POST['nome_plano'];
@@ -19,9 +19,9 @@ if (!in_array($nivel, $niveldapagina)) {
     $vlr_plano = $_POST['vlr_plano'];
     
      $consultaPlano = "SELECT * FROM planos
-                     WHERE id_plano = '$id_plano'";
+                       WHERE id_plano = '$id_plano'";
 
-    $sql_code = "UPDATE  planos SET (nome_plano ='$nome_plano', desc_plano ='$desc_plano', vlr_plano='$vlr_plano' WHERE id_plano = ''";
+    $sql_code = "UPDATE planos SET (nome_plano ='$nome_plano', desc_plano ='$desc_plano', vlr_plano='$vlr_plano' WHERE id_plano = '$id_plano'";
 
     if ($conexao->query($sql_code) or die($conexao->error)) {
        $_SESSION['msgListaPlano'] = "<center><div class='alert alert-success' role='alert'>ok, plano inserido com sucesso!</center>";
